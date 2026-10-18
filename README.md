@@ -1,32 +1,50 @@
-# Vi Rock Chess (VRC)."Formerly known as Vinu Chess Zero"
+<p align="center">
+  <img src="logo.png" alt="Vi Rock Chess Logo" width="250"/>
+</p>
 
-A chess engine built from scratch in C++ on Android (Termux).
+<h1 align="center">Vi Rock Chess (VRC)</h1>
+<p align="center"><i>Formerly known as Vinu Chess Zero (VC0)</i></p>
+<p align="center">A chess engine built from scratch in C++ on Android (Termux).</p>
 
-## About
+---
 
-Vinu Chess Zero is a chess engine I built from scratch in **4 days** on my Android phone using Termux.
+## 📖 About
 
-## Features
+**Vi Rock Chess** is the direct descendant of Vinu Chess Zero. What started as a 5-day experiment on an Android phone using Termux has evolved into a dedicated open-source chess engine project.
 
-- **Search**: Alpha-Beta + Iterative Deepening
-- **Quiescence Search**: Avoids horizon effect
-- **Transposition Table**: Zobrist hashing (1M entries)
-- **Move Ordering**: MVV-LVA + Killer + History
-- **Evaluation**: Material + Piece-Square Tables
-- **Opening Book**: 50+ common opening lines
+Our goal is to build a fast, stable, and highly competitive engine, progressing from classic Alpha-Beta search to Bitboards and eventually integrating Neural Networks (NNUE).
 
-## Strength
+## 🚀 Features (Current - v1.0)
+
+*   **Search**: Alpha-Beta + Iterative Deepening
+*   **Quiescence Search**: Avoids the horizon effect
+*   **Transposition Table**: Zobrist hashing (1M entries)
+*   **Move Ordering**: MVV-LVA + Killer + History
+*   **Evaluation**: Material + Full Piece-Square Tables (PST)
+*   **Opening Book**: 50+ common opening lines
+*   **Protocol**: UCI compatible
+
+## 📈 Strength
 
 | Opponent | Result |
-|---|---|
+| :--- | :--- |
 | Stockfish level 5 | Win (2x) |
 | Stockfish level 6 | Loss |
-| Estimated ELO | ~2000-2050 |
+| **Estimated ELO** | **~2050** |
 
-## How to Build
+## 🛠️ How to Build
+
+To compile the engine on Termux or any Linux environment:
 
 ```bash
-git clone https://github.com/ctrandinh485-del/Vinu-chess-zero.git
-cd Vinu-chess-zero
-clang++ -O2 main.cpp -o chess
-./chess
+# Clone the repository
+git clone https://github.com/ctrandinh485-del/Vi-Rock-Chess.git
+
+# Navigate to the directory
+cd Vi-Rock-Chess
+
+# Compile with clang++ (optimized)
+clang++ -O3 -march=native main.cpp -o vrc
+
+# Run the engine
+./vrc
