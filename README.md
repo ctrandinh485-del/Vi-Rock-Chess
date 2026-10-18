@@ -1,4 +1,4 @@
-# Vinu Chess Zero
+# Vi Rock Chess (VRC)."Formerly known as Vinu Chess Zero"
 
 A chess engine built from scratch in C++ on Android (Termux).
 
