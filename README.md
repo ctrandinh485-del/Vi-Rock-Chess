@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="Vi Rock Chess Logo" width="250"/>
+  <img src="IMG_20261018_091125.jpg " alt="Vi Rock Chess Logo" width="250"/>
 </p>
 
 <h1 align="center">Vi Rock Chess (VRC)</h1>
